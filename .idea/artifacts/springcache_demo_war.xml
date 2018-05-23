@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springcache-demo:war">
+    <output-path>$PROJECT_DIR$/springcache-demo/target</output-path>
+    <root id="archive" name="springcache-demo-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springcache-demo:war exploded" />
+    </root>
+  </artifact>
+</component>

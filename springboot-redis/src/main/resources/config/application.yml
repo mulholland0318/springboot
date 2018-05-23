@@ -1,0 +1,33 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /
+spring:
+  redis:
+    jedis:
+      pool:
+        max-wait: 500
+        max-active: 800
+        min-idle: 5
+        max-idle: 100
+    host: localhost
+    password:
+    port: 7000
+    database: 6
+    timeout: 2000
+#    cluster:
+#      nodes:
+#        - 127.0.0.1:7000
+#        - 127.0.0.1:7001
+#        - 127.0.0.1:7002
+#        - 127.0.0.1:7003
+#        - 127.0.0.1:7004
+#        - 127.0.0.1:7005
+#      max-redirects: 3
+    sentinel:
+      master: mymaster      #配置的哨兵对应的名称
+      nodes:
+        - 127.0.0.1:26379   #哨兵配置的地址和端口
+        - 127.0.0.1:36379   #哨兵配置的地址和端口
+        - 127.0.0.1:46379   #哨兵配置的地址和端口
+
